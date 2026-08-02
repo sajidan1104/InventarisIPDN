@@ -1,0 +1,231 @@
+/* Custom fluid CSS style for Modern IPDN Management Pages */
+:root {
+    --ipdn-navy: #002855;
+    --ipdn-navy-hover: #001f42;
+    --ipdn-gold: #D4AF37;
+    --ipdn-bg: #f8fafc;
+    --card-shadow: 0 10px 30px rgba(0, 40, 85, 0.04);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--ipdn-bg);
+    color: #1e293b;
+}
+
+/* Sidebar Styling */
+.sb-sidenav-dark {
+    background-color: var(--ipdn-navy) !important;
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 12px;
+    margin: 4px 12px;
+    transition: all 0.2s ease;
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .nav-link:hover,
+.sb-sidenav-dark .sb-sidenav-menu .nav-link.active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.08) !important;
+    border-left: 4px solid var(--ipdn-gold);
+}
+
+.sb-sidenav-dark .sb-sidenav-menu .sb-nav-link-icon {
+    color: var(--ipdn-gold) !important;
+}
+
+/* Navbar Top Styling */
+.sb-topnav.navbar-dark {
+    background-color: var(--ipdn-navy) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: var(--ipdn-gold) !important;
+}
+
+/* --- TOMBOL LOGOUT POJOK KANAN ATAS (NAVBAR) --- */
+.logout-nav-item {
+    color: rgba(255,255,255,0.8) !important;
+    font-weight: 600;
+    font-size: 13px;
+    padding: 8px 16px !important;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    margin-right: 15px;
+}
+
+.logout-nav-item i {
+    transition: color 0.2s ease;
+}
+
+.logout-nav-item:hover {
+    color: #ef4444 !important;
+    background-color: rgba(239, 68, 68, 0.1) !important;
+    border-color: rgba(239, 68, 68, 0.3) !important;
+    text-decoration: none;
+}
+
+.logout-nav-item:hover i {
+    color: #ef4444 !important;
+}
+
+/* Modern Card Layout */
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: var(--card-shadow) !important;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid rgba(0,0,0,0.05) !important;
+    padding: 20px 24px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.card-body {
+    padding: 24px !important;
+}
+
+/* Modern Button styling */
+.btn {
+    border-radius: 30px !important;
+    padding: 8px 20px !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    transition: all 0.3s ease !important;
+}
+
+.btn-primary {
+    background-color: var(--ipdn-navy) !important;
+    border-color: var(--ipdn-navy) !important;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--ipdn-navy-hover) !important;
+    transform: translateY(-1px);
+}
+
+.btn-warning {
+    background-color: var(--ipdn-gold) !important;
+    border-color: var(--ipdn-gold) !important;
+    color: #ffffff !important;
+}
+
+.btn-warning:hover {
+    filter: brightness(0.9);
+    transform: translateY(-1px);
+}
+
+.btn-danger {
+    background-color: #ef4444 !important;
+    border-color: #ef4444 !important;
+}
+
+.btn-danger:hover {
+    background-color: #dc2626 !important;
+    transform: translateY(-1px);
+}
+
+/* Modern Elegant Table style */
+.table-responsive {
+    border-radius: 12px;
+}
+
+.table {
+    border-collapse: separate !important;
+    border-spacing: 0 8px !important;
+    margin-bottom: 0 !important;
+}
+
+.table thead th {
+    background-color: #f1f5f9 !important;
+    color: var(--ipdn-navy) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+    border: none !important;
+    padding: 14px 16px !important;
+}
+
+.table tbody tr {
+    background-color: #ffffff !important;
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8fafc !important;
+    transform: scale(1.002);
+}
+
+.table tbody td {
+    padding: 16px !important;
+    vertical-align: middle !important;
+    border-top: 1px solid #f1f5f9 !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+    color: #334155;
+    font-size: 13px;
+}
+
+/* Modal styling */
+.modal-content {
+    border: none !important;
+    border-radius: 20px !important;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15) !important;
+}
+
+.modal-header {
+    background-color: var(--ipdn-navy) !important;
+    color: #ffffff;
+    border-bottom: none !important;
+    border-radius: 20px 20px 0 0 !important;
+    padding: 20px 24px !important;
+}
+
+.modal-header .close {
+    color: #ffffff !important;
+    text-shadow: none !important;
+    opacity: 0.8;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+    padding: 24px !important;
+}
+
+.form-control {
+    border-radius: 10px !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 10px 14px !important;
+    font-size: 13px !important;
+    transition: all 0.2s ease !important;
+}
+
+.form-control:focus {
+    border-color: var(--ipdn-navy) !important;
+    box-shadow: 0 0 0 3px rgba(0, 40, 85, 0.1) !important;
+}

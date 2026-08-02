@@ -1,0 +1,229 @@
+/* Custom Premium CSS for IPDN Login Page matching design layout */
+:root {
+    --ipdn-navy: #002855;
+    --ipdn-navy-hover: #001f42;
+    --ipdn-gold: #D4AF37;
+    --bg-neutral: #f4f6fa;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-neutral);
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- LOGO & HEADER --- */
+.login-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.login-logo {
+    max-width: 90px;
+    height: auto;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 4px 8px rgba(0, 40, 85, 0.1));
+}
+
+.login-title {
+    color: var(--ipdn-navy);
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.login-subtitle {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* --- CARD CONTAINER --- */
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 24px;
+    padding: 35px 30px;
+    box-shadow: 0 12px 30px rgba(0, 40, 85, 0.05);
+    border-top: 5px solid var(--ipdn-navy); /* Custom Border Line di Bagian Atas */
+    margin-bottom: 25px;
+}
+
+.welcome-section {
+    margin-bottom: 25px;
+}
+
+.welcome-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.welcome-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* --- FORM FIELDS --- */
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: var(--text-muted);
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px 15px 12px 42px;
+    border-radius: 12px;
+    border: 1.5px solid #cbd5e1;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: all 0.2s ease-in-out;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: var(--ipdn-navy);
+    box-shadow: 0 0 0 3px rgba(0, 40, 85, 0.08);
+}
+
+.input-field::placeholder {
+    color: #94a3b8;
+}
+
+/* Password eye toggle */
+.eye-toggle {
+    position: absolute;
+    right: 15px;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 14px;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.eye-toggle:hover {
+    color: var(--ipdn-navy);
+}
+
+/* Remember Me Checkbox */
+.remember-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    user-select: none;
+}
+
+.remember-checkbox {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    accent-color: var(--ipdn-navy);
+    cursor: pointer;
+}
+
+/* --- SUBMIT BUTTON --- */
+.submit-btn {
+    width: 100%;
+    background-color: var(--ipdn-navy);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 40, 85, 0.15);
+}
+
+.submit-btn:hover {
+    background-color: var(--ipdn-navy-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(0, 40, 85, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* --- BACK TO DASHBOARD --- */
+.back-link-container {
+    text-align: center;
+}
+
+.back-link {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    color: var(--ipdn-navy);
+}
